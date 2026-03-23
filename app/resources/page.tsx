@@ -116,8 +116,8 @@ export default function ResourcesPage() {
                 </p>
 
                 <span className="relative z-10 inline-flex items-center gap-1 text-indigo-600 font-medium text-sm group-hover:gap-2 transition-all">
-                  Explore
-                  <span>→</span>
+                  {/* Explore
+                  <span>→</span> */}
                 </span>
               </Link>
             </motion.div>

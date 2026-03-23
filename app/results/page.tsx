@@ -4,10 +4,17 @@ export default function ResultsPage() {
     class12: { appeared: 440, passed: 400 },
   };
 
-  const calculatePercentage = (passed, appeared) =>
+  const calculatePercentage = (passed: number, appeared: number): string =>
     ((passed / appeared) * 100).toFixed(2);
 
-  const Bar = ({ label, value, max, color }) => (
+  type BarProps = {
+    label: string;
+    value: number;
+    max: number;
+    color: string;
+  };
+
+  const Bar = ({ label, value, max, color }: BarProps) => (
     <div className="mb-6">
       <div className="flex justify-between text-sm mb-2 font-medium">
         <span>{label}</span>
